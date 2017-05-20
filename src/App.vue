@@ -1,10 +1,18 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <nav id="menu-list">
+      <router-link to="/" tag="a">Home</router-link>
+      <router-link to="/AboutUs" tag="a">About Us</router-link>
+    </nav>
+    <div id="top-bar">
+    
+      <div id="logo"></div>
+    
+    </div>
     <router-view></router-view>
   </div>
 </template>
-
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
 export default {
   name: 'app'
@@ -12,12 +20,7 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
+  @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+  @import "assets/css/common.css";
 </style>
